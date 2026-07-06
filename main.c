@@ -1,17 +1,4 @@
-/* =====================================================================
-   Projeto de Extensão II - Ciência da Computação - UVA
-   Sistema de Vendas (Registro de produto, cliente, pedido, devolução
-   e geração de relatórios diário, mensal e anual)
 
-   VERSAO INTERATIVA: o usuario cadastra produtos, clientes e pedidos
-   manualmente atraves de um menu no terminal (sem dados fixos/anonimos).
-
-   Requisitos atendidos:
-   - struct       -> Produto, Cliente, ItemPedido, Pedido, RegistroDevolucao
-   - array        -> produtos[], clientes[], pedidosDoDia[MAX_PEDIDOS_DIA]...
-   - ordenação    -> ordenarMesesPorFaturamento() (bubble sort)
-   - funções      -> uma função para cada regra de negócio / relatório
-   ===================================================================== */
 
 #include <stdio.h>
 #include <string.h>
@@ -24,7 +11,7 @@
 #define TAXA_DEVOLUCAO    20.00f
 #define MESES_ANO          12
 
-/* ---------------------- STRUCTS ---------------------- */
+
 
 typedef struct {
     int   codigo;
@@ -65,7 +52,7 @@ typedef struct {
     float valorTotal;
 } FaturamentoMes;
 
-/* ---------------------- FUNÇÕES AUXILIARES DE LEITURA ---------------------- */
+
 
 void limparBufferEntrada(void) {
     int c;
